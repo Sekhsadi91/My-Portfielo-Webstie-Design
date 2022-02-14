@@ -1,0 +1,746 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width:90%;
+    margin: auto;
+ 
+}
+/* Navbar Section Start Here  */
+
+#navbar {
+    position: fixed;
+    width:100%;
+    font-family: 'ubuntu' ;
+    padding: 20px 0px;
+    
+}
+#navbar.sticky {
+    background: #DC143c;
+}
+
+#navbar .logo{
+    float: left;
+}
+#navbar .logo a{
+    text-decoration: none;
+    font-size: 35px;
+    color:white;
+}
+#navbar .logo span{
+    color:#DC143C;
+}
+#navbar.sticky .logo span{
+    color:white;
+}
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar ul li {
+   float:left;
+}
+.nav{
+    float: right;
+}
+#navbar ul li a{
+    color:#fff;
+    font-size: 19px;
+    margin-left: 25px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all ease .3s;
+    padding-top:10px ;
+    display: block;
+    
+}
+#navbar.sticky ul li a:hover{
+    color:yellow;
+}
+#navbar ul li a:hover{
+  color: #DC143C;
+}
+#nvabr #icon,.fa-align-right{
+    color:white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right:40px ;
+    cursor: pointer;
+    display: none;
+}
+/* Navbar Section Ends Here  */
+
+/* Home Section Start Here  */
+.home{
+    display: flex;
+    background-image: url("../img/3D-3banner-background\ copy.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.home{
+    color:#fff;
+    font-family: 'ubuntu';
+}
+.home-content {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.home .home-content,.text-1{
+    font-size: 27px;
+   
+}
+.home .home-content,.text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content,.text-3{
+    font-size: 40px;
+    margin: 5px 0px;
+}
+.home .home-content a{
+    display: inline-block;
+    background-color: #DC143C;
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border:2px solid #DC143C;
+    font-family: 'ubuntu';
+    font-weight: 400;
+   transition: all .3s ease;
+}
+.home .home-content a:hover{
+    color:#DC143C;
+    background: 0 0;
+}
+.home .home-content span{
+    color:#DC143C;
+}
+
+/* Home Section Ends Here  */
+
+/* About Section Start Here  */
+.about{
+    padding: 60px 0px;
+    background-color: #fff;
+   
+    
+}
+.about .title{
+    text-align: center;
+    font-family: 'ubuntu';
+    font-size: 40px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    
+    
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+    
+}
+.about .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: 'who i am';
+}
+.row::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.about .col-left{
+   margin-left: 90px;
+}
+.about .col-left img{
+    width:370px;
+    border-radius: 6px;
+    box-shadow: 2px 3px  5px #DC143c;
+    border:2px solid #DC143c;
+    
+}
+.about .col-right{
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.about .col-right .text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+.about .col-right span{
+    color:#DC143c;
+}
+.about .col-right p{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+.about .col-right a{
+    text-decoration: none;
+    color:white;
+    padding:15px 40px;
+    background-color: #DC143c;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    transition: all .3s ease;
+    border:2px solid #DC143c;
+    box-sizing: border-box;
+}
+.about .col-right a:hover{
+    color:#DC143c;
+    background-color: #fff;
+}
+/* About Section Start Here  */
+
+/* Services Section Start Here  */
+.services{
+    padding: 60px 0px;
+    background-color: #111111;
+}
+.services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu';
+    color:white;
+}
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    
+    
+}
+.services .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.services .title::after{
+    background: #111;
+    content: "what i provide";
+}
+.services .card{
+   text-align: center;
+   padding:50px 30px ;
+   background-color: #222;
+   margin: 10px;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: all .3s ease-in;
+
+}
+.services .card .fa-code,.fa-paint-brush,.fa-laptop-code{
+    font-size: 50px;
+    color:#DC143c;
+    margin-bottom: 10px;
+}
+.services .card .text{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+  
+}
+.services .card  p{
+    font-size: 17px;
+    color:white;
+    font-family: sans-serif;
+}
+.services .card:hover{
+    background-color: #DC143c;
+    color:white;
+   
+}
+.services .card:hover .fa-code{
+    color:white;
+}
+.services .card:hover .fa-paint-brush{
+    color:white;
+}
+.services .card:hover .fa-laptop-code{
+    color:white;
+}
+/* Services Section Ends Here  */
+
+/* Skills Section Start Here  */
+.skills{
+    padding:60px 0px ;
+    background-color: #fff;
+  
+}
+.skills .title{
+    text-align: center;
+    font-family: 'ubuntu';
+    font-size: 40px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    
+}
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    content: 'what i know';
+}
+.skills .col-left .text{
+    font-size: 20px;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+}
+
+.skills .col-left p{
+    font-size: 20px;
+    word-spacing: 5px;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+.skills .col-left a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins';
+    color:#fff;
+    padding: 15px 25px;
+    background-color: #DC143c;
+    border-radius: 6px;
+    transition: all .3s ease;
+    border:2px solid #DC143c;
+}
+.skills .col-left a:hover{
+    background-color: #fff;
+    color:#DC143c;
+}
+.skills .col-right {
+    font-family: 'Poppins';
+    margin-left:40px ;
+    width:93%;
+    
+}
+.skills .col-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.skills .col-right ul li span{
+    float: right;
+}
+.skills .col-right ul li{
+    margin: 25px 0px ;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Poppins';
+
+}
+.skills .col-right ul li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px );
+    left:0;
+    background-color: #D3D3D3;
+    width:100%;
+    height: 6px;
+   
+}
+.skills .col-right ul li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px );
+    left:0;
+    background-color: #DC143c;
+    width:0%;
+    height: 6px;
+    
+
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.skills .col-right ul li.html::after{
+    animation-name:html;
+}
+@keyframes html{
+    to{
+        width:90%;
+    }
+}
+.skills .col-right ul li.css::after{
+    animation-name:css;
+}
+@keyframes css{
+    to{
+        width:80%;
+    }
+}
+.skills .col-right ul li.js::after{
+    animation-name:js;
+}
+@keyframes js{
+    to{
+        width:60%;
+    }
+}
+.skills .col-right ul li.jquery::after{
+    animation-name:jquery;
+}
+@keyframes jquery{
+    to{
+        width:85%;
+    }
+}
+.skills .col-right ul li.bootstrap::after{
+    animation-name:bootstrap;
+}
+@keyframes bootstrap{
+    to{
+        width:95%;
+    }
+}
+
+/* Skills Section Ends Here  */
+
+/* My Team Section Start Here  */
+.team{
+    background-color: #111111;
+    padding: 60px 0px;
+
+}
+.team .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu';
+    color:white;
+}
+.team .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    
+    
+}
+.team .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.team .title::after{
+    background: #111;
+    content: "who with me";
+}
+.team .card{
+    background-color: #222;
+    box-sizing: border-box;
+    padding: 40px 40px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    
+}
+.team .card:hover {
+    background-color: #DC143c;
+    color:white;
+}
+.team .card:hover img{
+    border:5px solid #fff;
+    
+}
+.team .card img{
+    width:150px;
+    height: 150px;
+    border-radius:50%;
+    border: 5px solid #DC143c;
+    margin: auto;
+   display: block;
+   transition: all .3s ease-out;
+}
+.team .card .text{
+    font-size: 25px;
+    font-family: 'Poppins';
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+}
+.team .card p{
+    color:white;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 22px;
+    
+
+}
+/* My Team Section Start Here  */
+
+/* My Contact Section Start Here  */
+.contact {
+    padding: 60px 0px;
+}
+.contact .title{
+    text-align: center;
+    font-family: 'ubuntu';
+    font-size: 40px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content: 'get in touch';
+}
+
+.contact .col-left .text {
+    font-size: 20px;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+}
+.contact .col-left p{
+    font-size: 22px;
+    text-align: justify;
+}
+.contact .col-left .icons{
+    margin: 20px 0px;
+    overflow: hidden;
+    
+}
+.conatct .icons,.fa-user,.fa-map-marker-alt,.fa-envelope{
+    font-size: 30px;
+    color:#DC143c;
+    float: left;
+    
+  
+}
+.contact .icons .info{
+    margin-top: 20px;
+}
+.contact .icons .info,.head,.sub-title{
+    margin-left: 40px;
+}
+.contact .info,.head{
+    font-size: 18px;
+    font-family: 'poppins';
+}
+.contact .info,.sub-title{
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+.col-right{
+   margin-left: 50px;
+}
+.col-right .text{
+    font-family: 'poppins';
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.col-right input,textarea{
+    outline:none;
+    padding: 10px;
+    font-size:'poppins' ;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.col-right button{
+    border:none;
+    margin-top: 20px;
+    outline: none;
+    padding:15px 30px;
+    background-color: #DC143c;
+    font-size: 17px;
+    font-family:'poppins';
+    border-radius: 10px;
+    border:2px solid #DC143c;
+    color:white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.col-right button:hover{
+    background-color:white;
+    color:#DC143c;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+  }
+/* mediya query start here  */
+
+@media screen and (max-width: 1052px){
+.col-lg-1 {width: 8.33%;}
+.col-lg-2 {width: 16.66%;}
+.col-lg-3 {width: 25%;}
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-lg-9 {width: 75%;}
+.col-lg-10 {width: 83.33%;}
+.col-lg-11 {width: 91.66%;}
+.col-lg-12 {width: 100%;}
+}
+
+
+@media screen and (max-width: 947px){
+    #nvbar .nav #icon,.fa-align-right{
+        display: block;
+        transition: all .3s;
+    }
+    #nvbar .nav #icon,.fa-align-right:hover{
+        color:#DC143c;
+    }
+    #navbar .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #111111;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #navbar .nav ul li{
+        float: none;
+        margin: 35px 0px;
+        line-height: 30px;
+    }
+    #navbar .nav ul li a{
+        font-size: 25px;
+    }
+    #navbar .nav ul.show{ 
+        left:0;
+    }
+    #navbar.sticky:hover .fa-align-right{
+        color:white;
+    }
+    #navbar.sticky ul li a:hover{
+        color:#DC143c;
+    }
+    /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+    .about .col-left img{
+        display: block;
+        margin: auto;
+    }
+ 
+
+
+}
